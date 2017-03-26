@@ -1,0 +1,22 @@
+{
+  "name": "movieflix",
+  "version": "1.0.0",
+  "description": "Movieflix app is implemented by MEAN stack and REST API. The wbsite contains informatio  about various movies.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manali125/movieflix.git"
+  },
+  "author": "Manali Shrikant Sathe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manali125/movieflix/issues"
+  },
+  "homepage": "https://github.com/manali125/movieflix#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
