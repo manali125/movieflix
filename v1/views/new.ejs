@@ -1,0 +1,9 @@
+<% include partials/header %>
+      <h1>Add new movie</h1>
+      <form action="/movies" method="POST">
+         Title:<input type="text" name="title">
+         Rating:<input type="text" name="rating">
+         Description:<input type="text" name="description">
+         <button>Submit</button>
+      </form>
+<% include partials/footer %>
