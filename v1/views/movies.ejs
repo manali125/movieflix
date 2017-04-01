@@ -1,10 +1,27 @@
 <% include partials/header %>
-<h1>Movies</h1>
-<a href="/movies/new">Add new movie</a>
-<% movies.forEach(function(movie){%>
-	<li>Title:<%= movie.title%></li>
-	<p><em>Rating:<%= movie.rating%></em></p>
-	<p>Description:<%= movie.description%></p>
-<%})%>
+<div class="container">
+    <header class="jumbotron" align="center">
+       <div class="container">
+         <h1>Welcome to Movieflix</h1>
+         <p>The only place to find the best of movies in the world!</p> 
+         <p>
+               <a class="btn btn-primary btn-lg" href="/movies/new">Add new movie</a>
+         </p>
+       </div>  
+    </header>
 
+    <div class="row" style="display:flex; flex-wrap:wrap;">
+		<% movies.forEach(function(movie){%>
+			<div class="col-md-3 col-sm-6">
+			   <div class="thumbnail">
+                  <img src="<%=movie.poster%>">
+                 <div class="caption">
+                  <h4><%=movie.title%></h4>
+			   </div>
+			   </div>
+			   
+            </div>
+		<%})%>
+	</div>	
+</div>
 <% include partials/footer %>
