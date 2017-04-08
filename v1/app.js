@@ -2,37 +2,13 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var app = express();
 var mongoose = require("mongoose");
+var Movieflix = require("./models/movieflix");
 
 mongoose.connect("mongodb://localhost/movieflix");
 app.use(bodyParser.urlencoded({extended:true}));
 app.set("view engine","ejs");
 
-//SCHEMA SETUP
-var movieflixSchema = new mongoose.Schema({
-	title:String,
-	year:Number,
-	rated:String,
-	released:String,
-	runtime:String,
-	genre:String,
-	director:String,
-	writer:String,
-	actors:String,
-	plot:String,
-	runtime:String,
-	language:String,
-	country:String,
-	awards:String,
-	poster:String,
-	metaScore:Number,
-	imdbRating:Number,
-	imdbVotes:Number,
-	imdbId:String,
-	type:String
 
-});
-
-var Movieflix = mongoose.model("Movieflix",movieflixSchema); 
 
 // Movieflix.create(
 // {
@@ -122,6 +98,10 @@ app.post("/movies",function(req,res){
 
 app.get("/movies/new",function(req,res){
   res.render("new.ejs");
+});
+
+app.get("/movies/:id",function(req,res){
+    res.send("This will be the showpage");
 });
 
 app.listen(8080,function() {
