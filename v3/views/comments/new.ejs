@@ -1,7 +1,7 @@
 <% include ../partials/header %>
 <div class="container">
 	<div class="row">
-     <h1 style="text-align:center">Add new comment to <%= movie.title%></h1>
+     <h1 style="text-align:center" id="newComment">Add new comment to <%= movie.title%></h1>
      <div style="width:30%;margin:0 auto">
 	      <form action="/movies/<%= movie._id %>/comments" method="POST">
 	         <div class="form-group">
