@@ -1,0 +1,72 @@
+<% include ../partials/header %>
+<div class="container">
+	<div class="row">
+     <h1 style="text-align:center">Add new movie</h1>
+     <div style="width:30%;margin:0 auto">
+	      <form action="/movies" method="POST">
+	         <div class="form-group">
+	         Title:<input class="form-control" type="text" name="title">
+	         </div>
+	          <div class="form-group">
+	         Year:<input class="form-control"  type="text" name="year">
+	         </div>
+	          <div class="form-group">
+	         Rating:<input class="form-control"  type="text" name="rated">
+	         </div>
+	          <div class="form-group">
+	         Release:<input class="form-control"  type="text" name="release">
+	         </div>
+	          <div class="form-group">
+	         Runtime:<input class="form-control"  type="text" name="runtime">
+	         </div>
+	          <div class="form-group">
+	         Genre:<input class="form-control"  type="text" name="genre">
+	         </div>
+	          <div class="form-group">
+	         Director:<input class="form-control"  type="text" name="director">
+	         </div>
+	          <div class="form-group">
+	         Writer:<input class="form-control"  type="text" name="writer">
+	         </div>
+	          <div class="form-group">
+	         Actors:<input class="form-control"  type="text" name="actors">
+	         </div>
+	          <div class="form-group">
+	         Plot:<input class="form-control"  type="text" name="plot">
+	         </div>
+	          <div class="form-group">
+	         Language:<input class="form-control"  type="text" name="language">
+	         </div>
+	          <div class="form-group">
+	         Country:<input class="form-control"  type="text" name="country">
+	         </div>
+	          <div class="form-group">
+	         Awards:<input class="form-control"  type="text" name="awards">
+	         </div>
+	          <div class="form-group">
+	         Poster:<input class="form-control"  type="text" name="poster">
+	         </div>
+	          <div class="form-group">
+	         MetaScore:<input class="form-control"  type="text" name="metaScore">
+	         </div>
+	          <div class="form-group">
+	         IMDB Rating:<input class="form-control"  type="text" name="imdbRating">
+	         </div>
+	          <div class="form-group">
+	         IMDB Votes:<input class="form-control"  type="text" name="imdbVotes">
+	         </div>
+	          <div class="form-group">
+	         IMDB ID:<input class="form-control"  type="text" name="imdbId">
+	         </div>
+	          <div class="form-group">
+	         Type:<input class="form-control"  type="text" name="type">
+	         </div>
+	          <div class="form-group">
+	         <button class="btn btn-block btn-primary">Submit</button>
+	         </div>
+	      </form>
+	    <a class="btn btn-primary btn-lg" href="/movies">Go Back</a>  
+      </div>
+    </div>
+</div>      
+<% include ../partials/footer %>
