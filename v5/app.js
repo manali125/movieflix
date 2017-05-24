@@ -15,7 +15,9 @@ var commentRoutes = require("./routes/comments"),
     movieRoutes   = require("./routes/movies"),
     indexRoutes   = require("./routes/index");
 
-mongoose.connect("mongodb://localhost/movieflix");
+// mongoose.connect("mongodb://localhost/movieflix");
+mongoose.connect("mongodb://manali:manali@ds153501.mlab.com:53501/movieflix");
+
 app.use(bodyParser.urlencoded({extended:true}));
 app.set("view engine","ejs");
 app.use(express.static(__dirname + "/public"));
