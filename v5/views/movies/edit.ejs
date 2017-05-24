@@ -1,0 +1,72 @@
+<% include ../partials/header %>
+<div class="container">
+	<div class="row">
+     <h1 style="text-align:center">Edit <%= movie.title %></h1>
+     <div style="width:30%;margin:0 auto">
+	      <form action="/movies/<%=movie._id%>?_method=PUT" method="POST">
+	         <div class="form-group">
+	         Title:<input class="form-control" type="text" name="movie[title]" value="<%=movie.title%>">
+	         </div>
+	          <div class="form-group">
+	         Year:<input class="form-control"  type="text" name="movie[year]" value="<%=movie.year%>">
+	         </div>
+	          <div class="form-group">
+	         Rating:<input class="form-control"  type="text" name="movie[rated]" value="<%=movie.rated%>">
+	         </div>
+	          <div class="form-group">
+	         Release:<input class="form-control"  type="text" name="movie[release]" value="<%=movie.release%>">
+	         </div>
+	          <div class="form-group">
+	         Runtime:<input class="form-control"  type="text" name="movie[runtime]" value="<%=movie.runtime%>">
+	         </div>
+	          <div class="form-group">
+	         Genre:<input class="form-control"  type="text" name="movie[genre]" value="<%=movie.genre%>">
+	         </div>
+	          <div class="form-group">
+	         Director:<input class="form-control"  type="text" name="movie[director]" value="<%=movie.director%>">
+	         </div>
+	          <div class="form-group">
+	         Writer:<input class="form-control"  type="text" name="movie[writer]" value="<%=movie.writer%>">
+	         </div>
+	          <div class="form-group">
+	         Actors:<input class="form-control"  type="text" name="movie[actors]" value="<%=movie.actors%>">
+	         </div>
+	          <div class="form-group">
+	         Plot:<input class="form-control"  type="text" name="movie[plot]" value="<%=movie.plot%>">
+	         </div>
+	          <div class="form-group">
+	         Language:<input class="form-control"  type="text" name="movie[language]" value="<%= movie.language %>">
+	         </div>
+	          <div class="form-group">
+	         Country:<input class="form-control"  type="text" name="movie[country]" value="<%= movie.country %>">
+	         </div>
+	          <div class="form-group">
+	         Awards:<input class="form-control"  type="text" name="movie[awards]" value="<%= movie.awards %>">
+	         </div>
+	          <div class="form-group">
+	         Poster:<input class="form-control"  type="text" name="movie[poster]" value="<%=movie.poster%>">
+	         </div>
+	          <div class="form-group">
+	         MetaScore:<input class="form-control"  type="text" name="movie[metaScore]" value="<%=movie.metaScore%>">
+	         </div>
+	          <div class="form-group">
+	         IMDB Rating:<input class="form-control"  type="text" name="movie[imdbRating]" value="<%=movie.imdbRating%>">
+	         </div>
+	          <div class="form-group">
+	         IMDB Votes:<input class="form-control"  type="text" name="movie[imdbVotes]" value="<%=movie.imdbVotes%>">
+	         </div>
+	          <div class="form-group">
+	         IMDB ID:<input class="form-control"  type="text" name="movie[imdbId]" value="<%=movie.imdbId%>">
+	         </div>
+	          <div class="form-group">
+	         Type:<input class="form-control"  type="text" name="movie[type]" value="<%=movie.type%>">
+	         </div>
+	          <div class="form-group">
+	         <button class="btn btn-block btn-primary">Submit</button>
+	         </div>
+	      </form>
+	    <a class="btn btn-primary btn-lg" href="/movies">Go Back</a>  
+      </div>
+    </div>
+</div>      
+<% include ../partials/footer %>
